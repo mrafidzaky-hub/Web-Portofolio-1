@@ -1,0 +1,452 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-style: normal;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: #2541de;
+    color: white;
+    
+     
+}
+
+
+/* Navbar */
+.navbar {
+    background-color:  #2541de;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    z-index: 1000;   
+    
+}
+
+.container-navbar{
+    width: 90%;
+    margin-inline: auto;
+}
+
+.box-navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    column-gap: 30px;
+    list-style: none;
+    transition: transform 0.3s ease 0.s;
+    
+   
+}
+
+.menu a{
+    text-decoration: none; /* Optional: remove underline */  
+    color: white; 
+}
+
+
+.social-media{
+    display: flex;
+    column-gap: 20px;
+    background-color: transparent; 
+}
+
+.github-logo{
+    border-radius: 50%;
+    background-color: transparent; 
+    
+}
+
+h1{
+    font-weight: bold;
+}
+
+
+
+/* Home */
+
+.container-home{
+    display: flex;
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;   
+    box-sizing: border-box;
+}
+
+/* Left Container Home */
+
+.col-left-home{
+    height: 571.84px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.hello-world-home-text{
+    font-size: 24px;
+    margin: 0px;
+    padding: 10px;
+}
+
+.name-home-text{
+    font-size: 64px;
+    margin: 0px;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+.title-home-text{
+    font-size: 36px;
+    margin: 0px;
+    padding: 10px;
+}
+
+.descr-home-text{
+    font-size: 24px;
+    margin: 0px;
+    padding: 10px;
+}
+
+
+
+
+/* Right Container Home */
+.col-right-home{
+    height: 571.84px;
+    width: 572px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.profile-img{
+    height: 400px;
+    border-radius: 50%;
+    border: 5px solid black;  /*Set border in image*/
+    transition: transform 0.3s ease 0.s;
+}
+    
+
+/* Animasi Profpic */
+.profile-img:hover {
+    transform: translateY(-10px);
+}
+
+/* About Me */
+
+.container-about{
+    height: 100vh;
+    /* padding-top: 60px; Adjust this value to match the height of your navbar */
+    background-color: white; 
+    
+}
+
+.col-about-up{
+    /* margin-left: 150px;
+    margin-right: 150px; */
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    background-color: whitesmoke;
+    border-radius: 20px; */
+    color: #001B79;
+    background-color: #2541de;
+
+
+}
+
+.description-title{
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: center;
+    color: white;
+}
+
+.skills-title{
+    margin-bottom: 20px;
+    padding-left: 30px;
+    padding-top: 30px;
+    text-align: center;
+    color: #001B79;
+}
+
+.box-description{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px;
+    height: 300px;
+}
+
+
+.profile-img-about{
+    height: 300px;
+    
+}
+
+.col-about-below{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.box-skills{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+.skills{
+    
+    display: flex;
+    width: 200px;
+    height: 40px;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;
+    border: white solid 1px;
+    background-color: #001B79;
+}
+
+/* Animasi skills */
+.skills:hover {
+    transform: translateY(-10px);
+}
+
+.about-me h2{
+    font-weight: bold;
+}
+
+/* Portfolio */
+.portfolio{
+    padding-top: 70px; /* Adjust this value to match the height of your navbar */
+}
+
+.portfolio h2{
+    font-weight: bold;
+}
+
+.container-portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensures container height is at least as large as the viewport */
+    flex-direction: column;
+    
+}
+
+.portfolio-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 400px);
+    grid-template-columns: repeat(4, 300px);
+    gap: 20px;
+
+}
+
+.portfolio-text{
+    color: white;
+    
+}
+
+.portfolio h3{
+    font-weight: bold;
+    color: #001B79;
+    
+}
+
+.portfolio p{
+    font-weight: normal;
+    color: #001B79;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  /*shadow box*/
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    background-color: white;
+    
+}
+
+
+.tech-stack{
+    width: 100%;
+}
+
+.card-img{
+    height: 250px;
+    width: 280px;
+}
+
+/* External CSS Chatbox */
+
+.speech-bubble{
+    --arrow-w:0.5em;
+    --arrow-h:1em;
+    --bubble-corners:0;
+    --w:12em;
+    --border-size:3px;
+    --text-color:black;
+    --bubble-color:white;
+    --border-color:black;
+  }
+  .speech-bubble{
+    text-align:center;
+    font-family:cursive;
+    font-size:20px;
+    font-weight:bold;
+    color:var(--text-color);
+    background:var(--bubble-color);
+    padding:1em;
+    position:relative;
+    border-radius:var(--bubble-corners);
+    max-width:var(--w);
+    box-shadow:0 0 0 var(--border-size) var(--border-color);
+  }
+  
+  .speech-bubble.round{
+    --bubble-corners:1em;
+  }
+  
+  .speech-bubble.circle{
+    --bubble-corners:100%;
+    padding:2em;
+  }
+  
+  .speech-bubble:before,.speech-bubble:after{
+    content:"";
+    position:absolute;
+    bottom:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+    left:50%;
+    border-style:solid;
+    border-width:var(--arrow-h) var(--arrow-w);
+    border-color:var(--bubble-color) transparent transparent;
+  }
+  
+  .speech-bubble:before{
+    border-width:calc(var(--arrow-h) + var(--border-size)) calc(var(--arrow-w) + var(--border-size));
+    border-color:var(--border-color) transparent transparent;
+    bottom:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size)); 
+    left:calc(50% - var(--border-size));
+  }
+  
+  .speech-bubble.t:after{
+    border-color:transparent transparent var(--bubble-color);
+    bottom:auto;
+    top:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+  }
+  
+  .speech-bubble.t:before{
+    border-width:calc(var(--arrow-h) + var(--border-size)) calc(var(--arrow-w) + var(--border-size));
+    border-color:transparent transparent var(--border-color);
+    bottom:auto;
+    top:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size)); 
+  }
+  
+  .speech-bubble.l:after{
+    border-color:transparent var(--bubble-color) transparent transparent;
+    bottom:auto;
+    border-width:var(--arrow-w) var(--arrow-h);
+    top:calc(50% - var(--arrow-w));
+    left:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+  }
+  
+  .speech-bubble.l:before{
+    border-width:calc(var(--arrow-w) + var(--border-size)) calc(var(--arrow-h) + var(--border-size));
+    border-color:transparent var(--border-color) transparent transparent;
+    bottom:auto;  
+    top:calc(50% - var(--arrow-w) - var(--border-size));
+    left:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size)); 
+  }
+  
+  .speech-bubble.r:after{
+    border-color:transparent transparent transparent var(--bubble-color);
+    bottom:auto;
+    left:auto;
+    border-width:var(--arrow-w) var(--arrow-h);
+    top:calc(50% - var(--arrow-w));
+    right:calc(-1 * var(--arrow-h) * 2 + 0.5px);
+  }
+  
+  .speech-bubble.r:before{
+    border-width:calc(var(--arrow-w) + var(--border-size)) calc(var(--arrow-h) + var(--border-size));
+    border-color:transparent transparent transparent var(--border-color);
+    bottom:auto;
+    left:auto;
+    top:calc(50% - var(--arrow-w) - var(--border-size));
+    right:calc(-1 * var(--arrow-h) * 2 - 2.5*var(--border-size)); 
+  }
+  
+  .speech-bubble.pop{
+    animation-name: pop;
+    animation-duration: 0.5s;
+    animation-timing-function:cubic-bezier(0.755, 0.050, 0.855, 0.060);
+  }
+  
+  .speech-bubble.float{
+    animation-name: float-up;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease;
+  }
+  
+  .speech-bubble.r.float{
+    animation-name: float-left;
+  }
+  
+  .speech-bubble.l.float{
+    animation-name: float-right;
+  }
+  
+  .speech-bubble.t.float{
+    animation-name: float-down;
+  }
+  
+  @keyframes pop {
+    0% {transform: scale(0.8);}
+    80% {transform: scale(1.1);}
+    90% {transform: scale(0.9);}
+    100% {transform: scale(1);}
+  }
+  
+  @keyframes float-up {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(calc(-1 * var(--arrow-h)));}
+  }
+  
+  @keyframes float-left {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(calc(-1 * var(--arrow-h)));}
+  }
+  
+  @keyframes float-right {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(var(--arrow-h));}
+  }
+  
+  @keyframes float-down {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(var(--arrow-h));}
+  }
